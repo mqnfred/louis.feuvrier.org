@@ -1,0 +1,235 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 3.0 (September 3, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%!TEX program = xelatex
+% NOTE: this template must be compiled with XeLaTeX rather than PDFLaTeX
+% due to the custom fonts used. The line above should ensure this happens
+% automatically, but if it doesn't, your LaTeX editor should have a simple toggle
+% to switch to using XeLaTeX.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	10pt, % Default font size, can be between 8pt and 12pt
+]{freemancv}
+
+\columnratio{0.50, 0.50}
+
+% Headers and footers can be added with the following commands: \lhead{}, \rhead{}, \lfoot{} and \rfoot{}
+% Example right footer:
+%\rfoot{\textcolor{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % begin 2-col mode
+
+\parbox[][0.11\textheight][c]{\linewidth}{ % Box to hold your name and CV title; change the fixed height as needed to match the colored box to the right
+	\centering % Horizontally center text
+
+	{\sffamily\Huge Louis Feuvrier} % Your name
+
+	\medskip % Vertical whitespace
+
+	{\textcolor{headings}{Computer Scientist}}
+
+	\medskip % Vertical whitespace
+
+	{\textit{« We do these things not because they are easy, but because we thought they were going to be easy. »}}
+
+	\vfill % Push content to the top of the box
+}
+
+\section{Software philosophy}
+After 20 years of deep interest in computers, I am most passionate about the
+principles that go into architecting, developing and maintaining software. A
+systems thinker at heart, I believe in doing so sustainably with a pure and
+minimalist approach using a mix of modern (for devexp/ci) and less-modern
+(for prod) technologies. I can make maintainable software a reality for lean
+teams by ruthlessly removing complexity irrelevant to their domain.
+
+\section{Tooling preferences}
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	\tableentry{Loved}{linux, nixos, rust, mysql}{spaceafter}
+	\tableentry{Proficent}{go, python, c}{spaceafter}
+	\tableentry{Open to}{anything else (no java)}{spaceafter}
+\end{supertabular}
+
+\section{Extra curricular}
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	\tableentry{ongoing/infra}
+		{multi-host perso infra defined as a nix expr}{}
+	\tableentry{\href{https://github.com/mqnfred/dustr}{2020/dustr}}
+		{dart-rust compat layer/framework poc}{}
+	\tableentry{\href{https://github.com/mqnfred/atof}{2020/atof}}
+		{prototype of mumble implem in async rust}{}
+	\tableentry{\href{https://github.com/mqnfred/hips}{2019/hips}}
+		{rust cli/lib to store secrets alongside code}{}
+	\tableentry{\href{https://github.com/mqnfred/clishe}{2019/clishe}}
+		{a thin cli/shell builder framework for rust}{}
+	\tableentry{2015/stm32f4}
+		{arm bootloader for the stm32f4 board}{}
+	\tableentry{2014/stos}
+		{lab kernel, vfs/devfs/build/tasks/sched/...}{}
+	\tableentry{2013/mammos}
+		{homemade baremetal x86 early boot/os}{}
+	\tableentry{2012/mips vm}
+		{runs most mips programs}{}
+	\tableentry{2012/42sh}
+		{bash-like posix shell}{}
+\end{supertabular}
+
+\section{Education}
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	\qualificationentry
+		{2010 -- 2016} % Duration
+		{Masters} % Degree
+		{} % Honors, achievements or distinctions (e.g. first class honors)
+		{Computer Science} % Department
+		{EPITA, Paris, FR} % Institution
+	\qualificationentry
+		{2012} % Duration
+		{Masters} % Degree
+		{} % Honors, achievements or distinctions (e.g. first class honors)
+		{Mathematics \& Computer Science} % Department
+		{Tampere University of Technology, FI} % Institution
+\end{supertabular}
+
+\section{Workshops}
+\textbf{Feuvrier L.} C programming support \textit{EPITA 2015}
+
+\textbf{Feuvrier L.} Kernels: memory/interrupts/peripherals \textit{EPITA 2014}
+
+\textbf{Feuvrier L.} Web security: csrf/xss/ssl/https/mim \textit{EPITECH 2014}
+
+\section{Talks}
+\textbf{Feuvrier L.}
+\href{https://prezi.com/weom7ix5it3r/to-loot-you-first-need-to-boot/}
+{To loot your first need to boot}
+\textit{LSE internal 2014}
+
+\textbf{Feuvrier L.}, Goncalves F.
+\href{https://lse.epita.fr/data/lt/2015-10-13/lt-2015-10-13-Louis_Feuvrier_Fabien_Goncalves-tasks_in_stos.pdf}
+{Early task management and userland threads in a toy kernel}
+\textit{LSE Lightning talks 2015}
+\medskip
+
+\section{Articles}
+\textbf{Feuvrier L.}
+\href{https://blog.lse.epita.fr//2014/10/01/uefi-boot-stub-in-linux.html}
+{UEFI boot stub in Linux}
+\textit{LSE blog 2014}
+
+\switchcolumn % switch to the right column
+% colored details box
+\parbox[top][0.11\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
+	\colorbox{shade}{ % Create colored box and specify background color
+		\begin{supertabular}{@{\hspace{3pt}} p{0.05\linewidth} | p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faPhone} & +1 (650) 495-4732 \\ % Phone number
+			\raisebox{-1pt}{\faHome} & 252 Carl St, San Francisco, CA 94117 \\ % Address
+			\raisebox{-1pt}{\small\faDesktop} & \href{https://louis.feuvrier.org}{https://louis.feuvrier.org} \\ % Website
+			\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:louis@feuvrier.org}{louis@feuvrier.org} \\ % Email address
+			%\raisebox{-1pt}{\small\faDesktop} & \href{https://github.com/mqnfred}{https://www.LaTeXTemplates.com} \\ % 
+			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			% See fontawesome.pdf in the Fonts folder for all icons you can use
+		\end{supertabular}
+	}
+	\vfill % Push content to the top of the box
+}
+
+\section{Work Experience}
+\jobentry
+	{Jun2018 -- Present} % Date(s)
+	{San Francisco, CA} % Location
+	{Uber Technologies Inc} % Organization/Location
+	{Senior Software Engineer} % Job title
+	{
+		Part of technical leadership in storage platform. We support a
+		large-scale, low-latency NoSQL store (petabytes of data at
+		millions of qps in sub ms p50). Currently, my role ranges from
+		coordination and mentorship to high-level design and reviews,
+		development, operations and oncall management.
+	}
+
+\jobentry
+	{Jan2017 -- May2018} % Date(s)
+	{Aarhus, DK} % Location
+	{Uber Technologies Inc.} % Organization
+	{Software Engineer} % Job title
+	{
+		Designed/implemented/evolved SLI monitoring solutions (used by
+		more than 40 teams at Uber nowadays) and the backup scheduling
+		system for all of storage platform's offerings (schemaless,
+		mysql, cassandra, ..) at Uber.
+	}
+
+\jobentry
+	{Apr2016 -- Oct2016} % Date(s)
+	{San Francisco, CA} % Location
+	{Uber Technologies Inc.} % Organization
+	{Intern} % Job title
+	{
+		Designed and implemented a state-machine based host/fleet
+		lifecycle management for streaming platform's large fleet of
+		kafka brokers.
+	}
+
+\jobentry
+	{Oct2014 -- Feb2015} % Date(s)
+	{San Francisco, CA} % Location
+	{Arista Networks} % Organization
+	{Intern} % Job title
+	{
+		Worked on the kernel team, maintaining the company's large
+		patch set and tuning linux's rtnetlink network configuration
+		capabilities to account for the switches' custom needs. Also
+		dabbled in namespaces and virtual filesystems.
+	}
+
+\jobentry
+	{Jan2014 -- Mar2016} % Date(s)
+	{Paris, FR} % Location
+	{EPITA Systems/security lab (LSE)} % Organization
+	{Student Researcher/Teaching Assistant} % Job title
+	{
+		Implementation of VFS and devfs capabilities in the
+		laboratory's research kernel. Contributed to early task
+		management and many scheduler fixes. Taught kernel and web
+		security courses, C programming help.
+	}
+
+\jobentry
+	{Sep 2013 -- Jan 2014} % Date(s)
+	{Paris, FR} % Location
+	{Infinit} % Organization
+	{Intern} % Job title
+	{
+		Ported the GUI client to linux platform, rewrote and sanitized
+		the team's proprietary C++ SSL socket library.
+	}
+
+\section{Communication}
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	\tableentry{native}{french}{}
+	\tableentry{bilingual}{english}{}
+	\tableentry{bilingual}{spanish}{}
+\end{supertabular}
+\end{paracol} % end 2-col mode
+\end{document}
