@@ -39,7 +39,7 @@
       '';
     };
   in rec { # per-system output
-    devShell = pkgs.mkShell { inherit buildInputs; };
+    devShells.default = pkgs.mkShell { inherit buildInputs; };
     packages = rec {
       inherit resume www;
       default = www;
