@@ -1,6 +1,5 @@
 +++
 +++
-20 years of computers later, I am still building. From kernels to large
-distributed systems, I have seen software evolve across scales. These days, I
-especially enjoy applying computer science to the software development
-pipeline.
+From kernels to large distributed systems, I have seen software evolve across
+scales. 20 years of yak shaving later, I specialize in wrestling with the
+massive complexity that emerges from said scaling.
