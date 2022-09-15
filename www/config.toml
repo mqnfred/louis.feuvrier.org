@@ -14,12 +14,12 @@ foreground = "#657b83"
 hover = "#586e75"
 
 [extra.author]
-name = "Louis Feuvrier"
+name = "Louis"
 [extra]
-greeting = "Hello!"
-iam = "I am"
+greeting = "Bonjour!"
+iam = "My name is"
 links = [
-  { title = "github", url = "https:/github.com/mqnfred", icon = "github", color = "#268bd2" },
+  { title = "github", url = "https://github.com/mqnfred", icon = "github", color = "#268bd2" },
   { title = "resume", url = "https://louis.feuvrier.org/louis_feuvrier-resume.pdf", iconset = "fas", icon = "file-pdf", color = "#859900" },
   { title = "hn", url = "https://www.youtube.com/watch?v=oHg5SJYRHA0", icon = "y-combinator", color = "#dc322f" },
   { title = "email", url = "mailto:louis@feuvrier.org", iconset = "fas", icon = "envelope", color = "#b58900" }
