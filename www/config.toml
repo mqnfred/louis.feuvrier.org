@@ -14,10 +14,10 @@ foreground = "#657b83"
 hover = "#586e75"
 
 [extra.author]
-name = "dog"
+name = "Louis Feuvrier"
 [extra]
 greeting = "Hello!"
-iam = "This is"
+iam = "I am"
 links = [
   { title = "github", url = "https:/github.com/mqnfred", icon = "github", color = "#268bd2" },
   { title = "resume", url = "https://louis.feuvrier.org/louis_feuvrier-resume.pdf", iconset = "fas", icon = "file-pdf", color = "#859900" },
