@@ -1,5 +1,6 @@
 +++
 +++
 From kernels to large distributed systems, I have seen software evolve across
-scales. 20 years of yak shaving later, I specialize in wrestling with the
-massive complexity that comes with it.
+scales. Today, I am most passionate about the principles that go into designing
+and maintaining software [sustainably](naur1985programming.pdf) with a pure and
+minimalist approach.
