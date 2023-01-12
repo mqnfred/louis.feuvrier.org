@@ -4,7 +4,6 @@
   inputs = rec {
     nixpkgs.url = "github:nixos/nixpkgs/release-22.05";
     utils.url = "github:numtide/flake-utils";
-    utils.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = inputs: inputs.utils.lib.eachDefaultSystem (system: let
