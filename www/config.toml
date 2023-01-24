@@ -17,7 +17,7 @@ hover = "#586e75"
 name = "Louis"
 [extra]
 greeting = "Bonjour!"
-iam = "My name is"
+iam = "I am"
 links = [
   { title = "github", url = "https://github.com/mqnfred", icon = "github", color = "#dc322f" },
   { title = "resume", url = "https://louis.feuvrier.org/louis_feuvrier-resume.pdf", iconset = "fas", icon = "file-pdf", color = "#859900" },
