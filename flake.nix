@@ -25,10 +25,10 @@
       '';
     };
 
-    www = pkgs.stdenvNoCC.mkDerivation rec {
+    web = pkgs.stdenvNoCC.mkDerivation rec {
       inherit buildInputs;
-      name = "www";
-      src = ./www;
+      name = "web";
+      src = ./web;
 
       phases = [ "unpackPhase" "buildPhase" "installPhase" ];
       buildPhase = "zola build --output-dir public";
@@ -40,8 +40,8 @@
   in rec { # per-system output
     devShells.default = pkgs.mkShell { inherit buildInputs; };
     packages = rec {
-      inherit resume www;
-      default = www;
+      inherit resume web;
+      default = web;
     };
   });
 }
